@@ -106,12 +106,12 @@ class Writer
      * @param string $traceID
      * @return array
      */
-    public function publishForHttp($topic, $message, $partitionID = null, $traceID = null)
+    public function publishForHttp($topic, $messageBag, $partitionID = null, $traceID = null)
     {
         $api = $traceID ? ('/pubtrace?trace_id='.$traceID.'&') : '/pub?';
 
         $api .= 'topic='.rawurlencode($topic);
-        $ext = json_encode($message->getExtends());
+        $ext = json_encode($messageBag->getExtends());
         if (!empty($tag)) {
             $api .= 'ext='.rawurlencode($tag);
         }
