@@ -1,0 +1,54 @@
+[23-Dec-2017 17:13:03 PRC] PHP Fatal error:  Uncaught Kdt\Iron\Queue\Exception\InvalidConfigException: Missing nsq-topic config in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php:131
+Stack trace:
+#0 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php(62): Kdt\Iron\Queue\Adapter\Nsq\Config->getTopicGroupConfig('business_test')
+#1 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/InstanceMgr.php(78): Kdt\Iron\Queue\Adapter\Nsq\Config->getTopicConfig('business_test')
+#2 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(44): Kdt\Iron\Queue\Adapter\Nsq\InstanceMgr::getPubInstance('business_test')
+#3 [internal function]: Kdt\Iron\Queue\Adapter\Nsq\Client->Kdt\Iron\Queue\Adapter\Nsq\{closure}()
+#4 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/HA.php(45): call_user_func(Object(Closure))
+#5 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(50): Kdt\Iron\Queue\Adapter\Nsq\HA->pubRetrying(Object(Closure), 'business_test', 3, 10)
+#6 /code/master/vendor/php-nsq-client/src/Queue.php(45): Kdt\Iron\Queue\Adapter\Nsq in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php on line 131
+[23-Dec-2017 17:13:20 PRC] PHP Fatal error:  Uncaught Kdt\Iron\Queue\Exception\InvalidConfigException: Missing nsq-topic config in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php:131
+Stack trace:
+#0 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php(62): Kdt\Iron\Queue\Adapter\Nsq\Config->getTopicGroupConfig('business_test')
+#1 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/InstanceMgr.php(78): Kdt\Iron\Queue\Adapter\Nsq\Config->getTopicConfig('business_test')
+#2 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(44): Kdt\Iron\Queue\Adapter\Nsq\InstanceMgr::getPubInstance('business_test')
+#3 [internal function]: Kdt\Iron\Queue\Adapter\Nsq\Client->Kdt\Iron\Queue\Adapter\Nsq\{closure}()
+#4 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/HA.php(45): call_user_func(Object(Closure))
+#5 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(50): Kdt\Iron\Queue\Adapter\Nsq\HA->pubRetrying(Object(Closure), 'business_test', 3, 10)
+#6 /code/master/vendor/php-nsq-client/src/Queue.php(45): Kdt\Iron\Queue\Adapter\Nsq in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php on line 131
+[23-Dec-2017 17:14:38 PRC] PHP Fatal error:  Uncaught Kdt\Iron\Queue\Exception\InvalidConfigException: Missing nsq-topic config in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php:131
+Stack trace:
+#0 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php(62): Kdt\Iron\Queue\Adapter\Nsq\Config->getTopicGroupConfig('business_test')
+#1 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/InstanceMgr.php(78): Kdt\Iron\Queue\Adapter\Nsq\Config->getTopicConfig('business_test')
+#2 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(44): Kdt\Iron\Queue\Adapter\Nsq\InstanceMgr::getPubInstance('business_test')
+#3 [internal function]: Kdt\Iron\Queue\Adapter\Nsq\Client->Kdt\Iron\Queue\Adapter\Nsq\{closure}()
+#4 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/HA.php(45): call_user_func(Object(Closure))
+#5 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(50): Kdt\Iron\Queue\Adapter\Nsq\HA->pubRetrying(Object(Closure), 'business_test', 3, 10)
+#6 /code/master/vendor/php-nsq-client/src/Queue.php(45): Kdt\Iron\Queue\Adapter\Nsq in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php on line 131
+[23-Dec-2017 17:15:43 PRC] PHP Fatal error:  Uncaught Error: Call to undefined function Kdt\Iron\Queue\Adapter\Nsq\fvar() in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php:61
+Stack trace:
+#0 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/InstanceMgr.php(78): Kdt\Iron\Queue\Adapter\Nsq\Config->getTopicConfig('business_test')
+#1 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(44): Kdt\Iron\Queue\Adapter\Nsq\InstanceMgr::getPubInstance('business_test')
+#2 [internal function]: Kdt\Iron\Queue\Adapter\Nsq\Client->Kdt\Iron\Queue\Adapter\Nsq\{closure}()
+#3 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/HA.php(45): call_user_func(Object(Closure))
+#4 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(50): Kdt\Iron\Queue\Adapter\Nsq\HA->pubRetrying(Object(Closure), 'business_test', 3, 10)
+#5 /code/master/vendor/php-nsq-client/src/Queue.php(45): Kdt\Iron\Queue\Adapter\Nsq\Client->push('business_test', 'hello world', Array)
+#6 /code/master/vendor/php-nsq-client/sample/sample.php(36): Kdt\Iron\Queue\Queue::push('busines in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php on line 61
+[23-Dec-2017 17:16:13 PRC] PHP Fatal error:  Uncaught Kdt\Iron\Queue\Exception\InvalidConfigException: Missing nsq-topic config in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php:131
+Stack trace:
+#0 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php(62): Kdt\Iron\Queue\Adapter\Nsq\Config->getTopicGroupConfig('business_test')
+#1 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/InstanceMgr.php(78): Kdt\Iron\Queue\Adapter\Nsq\Config->getTopicConfig('business_test')
+#2 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(44): Kdt\Iron\Queue\Adapter\Nsq\InstanceMgr::getPubInstance('business_test')
+#3 [internal function]: Kdt\Iron\Queue\Adapter\Nsq\Client->Kdt\Iron\Queue\Adapter\Nsq\{closure}()
+#4 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/HA.php(45): call_user_func(Object(Closure))
+#5 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(50): Kdt\Iron\Queue\Adapter\Nsq\HA->pubRetrying(Object(Closure), 'business_test', 3, 10)
+#6 /code/master/vendor/php-nsq-client/src/Queue.php(45): Kdt\Iron\Queue\Adapter\Nsq in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php on line 131
+[23-Dec-2017 17:20:08 PRC] PHP Fatal error:  Uncaught Kdt\Iron\Queue\Exception\InvalidConfigException: Missing required topic config ~ business in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php:70
+Stack trace:
+#0 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/InstanceMgr.php(78): Kdt\Iron\Queue\Adapter\Nsq\Config->getTopicConfig('business')
+#1 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(44): Kdt\Iron\Queue\Adapter\Nsq\InstanceMgr::getPubInstance('business')
+#2 [internal function]: Kdt\Iron\Queue\Adapter\Nsq\Client->Kdt\Iron\Queue\Adapter\Nsq\{closure}()
+#3 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/HA.php(45): call_user_func(Object(Closure))
+#4 /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Client.php(50): Kdt\Iron\Queue\Adapter\Nsq\HA->pubRetrying(Object(Closure), 'business', 3, 10)
+#5 /code/master/vendor/php-nsq-client/src/Queue.php(45): Kdt\Iron\Queue\Adapter\Nsq\Client->push('business', 'hello world', Array)
+#6 /code/master/vendor/php-nsq-client/sample/sample.php(36): Kdt\Iron\Queue\Queue::push('busin in /code/master/vendor/php-nsq-client/src/Adapter/Nsq/Config.php on line 70
